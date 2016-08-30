@@ -6,6 +6,6 @@ class TestAdditionFunction < Minitest::Test
 		assert_equal(1, 1)
 	end
 	def test_1_plus_1
-		assert_equal(2, add(1))
+		assert_equal(2, add(1, 1))
 	end
 end
