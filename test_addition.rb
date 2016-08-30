@@ -5,18 +5,23 @@ require_relative "division.rb"
 
 class TestAdditionFunction < Minitest::Test
 	def test_1_equals_1
-		assert_equal(1, 1)
+		assert_equal(1, 1, 0)
 	end
 	def test_1_plus_1
-		assert_equal(2, add(1, 1))
+		assert_equal(2, sum(1, 1))
 	end
 	def test_num1_plus_num2
-		assert_equal(5, add(2, 3))
+		assert_equal(5, sum(2, 3))
 	end
 	def test_negative_number
-		assert_equal(2, add(-3, 5))
+		assert_equal(2, sum(-3, 5))
 	end
-
+	def test_1_plus_1_plus_1
+		assert_equal(3, sum(1, 1, 1))
+	end
+	def test_sum_of_5
+		assert_equal(10, sum(2, 2, 2, 2, 2))
+	end
 end
 
 class TestSubtractionFunction < Minitest::Test

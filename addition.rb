@@ -1,3 +1,3 @@
-def add(num1,num2)
-	num1 + num2
+def sum(*numbers)
+	numbers.inject(0) { |sum, x| sum += x }
 end
