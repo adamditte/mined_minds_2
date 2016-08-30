@@ -1,6 +1,7 @@
 require "minitest/autorun"
 require_relative "addition.rb"
 require_relative "subtraction.rb"
+require_relative "division.rb"
 
 class TestAdditionFunction < Minitest::Test
 	def test_1_equals_1
@@ -26,3 +27,11 @@ class TestSubtractionFunction < Minitest::Test
 		assert_equal(20, sub(-10, -30))
 	end
 end
+
+class TestDivisionFunction < Minitest::Test
+	def test_100_divided_by_10
+		assert_equal(10, div(100, 10))
+	end
+end
+
+
