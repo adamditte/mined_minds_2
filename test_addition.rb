@@ -32,6 +32,11 @@ class TestDivisionFunction < Minitest::Test
 	def test_100_divided_by_10
 		assert_equal(10, div(100, 10))
 	end
+	def test_div_by_decimals
+		assert_equal(30, div(15.0, 0.5))
+	end
+	def test_div_100_by_0
+		assert_equal("infinity", div(100, 0))
+	end
 end
-
 
