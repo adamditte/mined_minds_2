@@ -1,3 +1,6 @@
-def sum(*numbers)
-	numbers.inject(0) { |sum, x| sum += x }
+def add(*numbers)
+	sum = 0
+	numbers.each do |number|
+		sum = sum + number
+	end
 end
