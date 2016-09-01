@@ -3,4 +3,5 @@ def add(*numbers)
 	numbers.each do |number|
 		sum = sum + number
 	end
+	sum
 end
