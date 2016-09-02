@@ -27,11 +27,10 @@ def value
     val = mined_minds[work]
     if val % 3 == 0 && val % 5 == 0
       mined_minds[work] = 'MinedMinds'
-    elsif val % 3 == 0
+    elsif val % 3 == 0 or val == 3
       mined_minds[work] = 'Mined'
     elsif val % 5 == 0
       mined_minds[work] = 'Minds'
     end
   end
 end
-p value
