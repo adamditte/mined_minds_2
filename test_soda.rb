@@ -14,8 +14,4 @@ class TestSodaArray < Minitest::Test
 		results = soda
 		assert_equal("Sprite", results[25])
 	end
-	def test_110_returns_DP
-		results = soda
-		assert_equal("DrPepper", results [109])
-	end
 end
