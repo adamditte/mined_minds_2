@@ -9,4 +9,7 @@ def mined_minds(number)
 	else
 		number
 	end
+		array = [*1..100]
+		array.map do |element|
+	end	
 end

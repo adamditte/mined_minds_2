@@ -25,15 +25,24 @@ require "minitest/autorun"
 require_relative "mm_array.rb"
 class TestMMArray < Minitest::Test 
     def test_first_element_is_1
-        result = mined_minds_array()
-        assert_equal(1, result.first)
+        results = mined_minds_array
+        assert_equal(100, results.length)
     end
     def test_second_element_is_2
-    	result = mined_minds_array()
-    	assert_equal(2, result[1])
+    	results = mined_minds_array
+    	assert_equal(2, results[1])
     end
     def test_third_element_is_mined
-    	result = mined_minds_array()
-    	assert_equal("mined", result[2])
+    	results = mined_minds_array
+    	assert_equal("mined", results[2])
+    end
+    def test_60_returns_minedminds
+    	results = mined_minds_array
+    	assert_equal("minedminds", results[59])
     end
 end
+
+
+
+
+			

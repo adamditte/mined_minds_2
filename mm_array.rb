@@ -44,17 +44,22 @@
 # end
 # p mined_minds_array
 
-def results
-    results = [*(1..100)]
-end
-def mined_minds_array()
-    number = 1
-    results.each_index do |result|
-        number = number + result
-    end
-    if number = 3
-    	then "mined"
-    end
-    
-    results
+# 
+def mined_minds_array
+	my_array = []
+	(1..100).each do |number|
+		if number % 15 == 0
+			number = "minedminds"
+
+		elsif number % 3 == 0
+			number = "mined"
+
+		elsif number % 5 == 0
+			number = "minds"
+
+		else number = number
+		end
+		my_array << number
+		end
+	my_array
 end
