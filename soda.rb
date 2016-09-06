@@ -12,6 +12,5 @@ def soda()
 	end
 	name
 end
-
 soda()
 

@@ -63,3 +63,4 @@ def mined_minds_array
 		end
 	my_array
 end
+mined_minds_array
