@@ -18,9 +18,9 @@ class TestOneOffs < Minitest::Test
     	winning_tickets = ["7539"]
     	assert_equal(true, off(my_ticket, winning_tickets))
     end
-    def test_multiple_tickets
-    	my_ticket = "2379"
-    	winning_tickets = ["5813", "2479"]
-    	assert_equal(true, off(my_ticket, winning_tickets))
-    end
+    # def test_multiple_tickets
+    # 	my_ticket = "2379"
+    # 	winning_tickets = ["5813", "2479"]
+    # 	assert_equal(true, off(my_ticket, winning_tickets))
+    # end
 end
