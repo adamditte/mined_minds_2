@@ -3,9 +3,9 @@ require_relative "jtongslottery.rb"
 
 class TestOneOffs < Minitest::Test 
 
-	def test_a_matching_ticket_returns_false
+	def test_a_matching_ticket_returns_winner
         my_ticket = "4567"
-        winning_tickets = ["1111", "4567"]
+        winning_tickets = ["4567"]
         assert_equal("winner winner chicken dinner", off(my_ticket, winning_tickets))
     end
 	def test_ticket_off_by_1_returns_true
