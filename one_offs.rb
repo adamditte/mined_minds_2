@@ -18,4 +18,3 @@ def off(my_ticket, winning_tickets)
 		false
 	end
 end
- puts off
