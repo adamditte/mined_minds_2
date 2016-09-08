@@ -1,27 +1,27 @@
 require "minitest/autorun"
-require_relative "one_offs.rb"
+require_relative "jtongslottery.rb"
 
 class TestOneOffs < Minitest::Test 
 
 	def test_a_matching_ticket_returns_false
         my_ticket = "4567"
-        winning_tickets = ["4567"]
-        assert_equal(false, off(my_ticket, winning_tickets))
+        winning_tickets = ["1111", "4567"]
+        assert_equal("winner winner chicken dinner", off(my_ticket, winning_tickets))
     end
 	def test_ticket_off_by_1_returns_true
         my_ticket = "4456"
         winning_tickets = ["5456"]
-        assert_equal(true, off(my_ticket, winning_tickets))
+        assert_equal("close but no cigar", off(my_ticket, winning_tickets))
     end 
     def test_another_one_off
     	my_ticket = "7531"
     	winning_tickets = ["7539"]
-    	assert_equal(true, off(my_ticket, winning_tickets))
+    	assert_equal("close but no cigar", off(my_ticket, winning_tickets))
     end
     def test_miss_returns_false
 		my_ticket = "1963"
-    	winning_tickets = "3590"
-    	assert_equal(false, off(my_ticket, winning_tickets))
+    	winning_tickets = ["3590"]
+    	assert_equal("sad trombone noise", off(my_ticket, winning_tickets))
     end
     
 
