@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "jtongslottery.rb"
+require_relative "one_offs.rb"
 
 class TestOneOffs < Minitest::Test 
 
@@ -8,7 +8,7 @@ class TestOneOffs < Minitest::Test
         winning_tickets = ["4567"]
         assert_equal("winner winner chicken dinner", off(my_ticket, winning_tickets))
     end
-	def test_ticket_off_by_1_returns_true
+	def test_ticket_off_by_1_returns_close
         my_ticket = "4456"
         winning_tickets = ["5456"]
         assert_equal("close but no cigar", off(my_ticket, winning_tickets))
@@ -18,7 +18,7 @@ class TestOneOffs < Minitest::Test
     	winning_tickets = ["7539"]
     	assert_equal("close but no cigar", off(my_ticket, winning_tickets))
     end
-    def test_miss_returns_false
+    def test_miss_returns_fail
 		my_ticket = "1963"
     	winning_tickets = ["3590"]
     	assert_equal("sad trombone noise", off(my_ticket, winning_tickets))

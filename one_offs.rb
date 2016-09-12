@@ -12,9 +12,15 @@ def off(my_ticket, winning_tickets)
 		end
 		i += 1
 	end
-	if c == 3
-		true
+	if c == 4
+		"winner winner chicken dinner"
+	elsif
+		c == 3
+		"close but no cigar"
+	elsif
+		c == nil
+		"sad trombone noise"
 	else
-		false
+		"sad trombone noise"
 	end
 end
