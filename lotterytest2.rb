@@ -18,4 +18,17 @@ class TestLotteryTix < Minitest::Test
 		assert_equal([], find_winners(our_ticket, winning_tickets))
 	end
 
+	def test_return_array_with_single_match_winner
+		our_ticket = "1234"
+		winning_tickets = ["1234"]
+		assert_equal(["1234"], find_winners(our_ticket, winning_tickets))
+	end
+
+	def test_multiple_matches_get_returned
+		our_ticket = "1234"
+		winning_tickets = ["1234", "2345", "8675", "1234"]
+		assert_equal(["1234", "1234"], find_winners(our_ticket, winning_tickets))
+	end
+
+
 end
