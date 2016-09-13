@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "one_offs.rb"
+require_relative "raffle.rb"
 
 class TestOneOffs < Minitest::Test 
 

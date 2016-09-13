@@ -18,3 +18,7 @@ def off(our_ticket, winning_tickets)
 		"sad trombone noise"
 	end
 end
+
+
+# loop, case structure, if then else - 3 main components of coding
+#
